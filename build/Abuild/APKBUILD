@@ -2,7 +2,7 @@
 # Maintainer: Francesco Colista <fcolista@alpinelinux.org>
 pkgname=soxr
 pkgver=0.1.3
-pkgrel=${pkgrel:-0}
+pkgrel=0
 pkgdesc="High quality, one-dimensional sample-rate conversion library"
 url="https://sourceforge.net/projects/soxr/"
 arch="all"
@@ -48,7 +48,6 @@ doc() {
     amove usr/share
 }
 
-options="$options ${DISABLE_CHECK:+!check}"
 sha512sums="
 f4883ed298d5650399283238aac3dbe78d605b988246bea51fa343d4a8ce5ce97c6e143f6c3f50a3ff81795d9c19e7a07217c586d4020f6ced102aceac46aaa8  soxr-0.1.3.tar.xz
 "
